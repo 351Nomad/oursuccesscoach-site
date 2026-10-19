@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Our Success Coach | Revenue Transformation & Executive Program Leadership</title>
+  <meta name="description" content="Executive leadership for Salesforce revenue transformation, quote-to-cash modernization, complex program recovery, M&A integration and enterprise operating-model change.">
+  <meta name="theme-color" content="#071827">
+  <link rel="icon" href="assets/our-success-coach-s-mark.svg" type="image/svg+xml">
+  <meta property="og:title" content="Our Success Coach | Enterprise Transformation">
+  <meta property="og:description" content="Revenue transformation. Executive accountability. Measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oursuccesscoach.com/">
+  <style>
+    :root{
+      --ink:#0A1B2E;
+      --navy:#071827;
+      --navy2:#0D2A47;
+      --blue:#0D6EFD;
+      --sky:#EAF3FF;
+      --ice:#F5F8FB;
+      --white:#FFFFFF;
+      --muted:#66788A;
+      --line:#DCE5EE;
+      --shadow:0 24px 70px rgba(7,24,39,.12);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--white);
+      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      -webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+
+    nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);
+      backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,229,238,.82)}
+    .navin{height:88px;display:flex;align-items:center;justify-content:space-between;gap:34px}
+    .brand{display:flex;align-items:center;flex:0 0 auto}
+    .brand img{width:300px;height:auto}
+    .navlinks{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:620}
+    .navlinks a{color:#425466;transition:.18s}
+    .navlinks a:hover{color:var(--ink)}
+    .navlinks .contactLink{font-weight:760;color:var(--ink);padding-bottom:2px;border-bottom:1px solid transparent}
+    .navlinks .contactLink:hover{border-bottom-color:var(--ink)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:11px;
+      font-weight:750;border:1px solid var(--blue);background:var(--blue);color:#fff;transition:.2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(13,110,253,.20)}
+    .btn.alt{background:#fff;color:var(--ink);border-color:#CAD6E2}
+
+    .hero{position:relative;overflow:hidden;background:
+      radial-gradient(circle at 78% 32%,rgba(13,110,253,.18),transparent 26%),
+      radial-gradient(circle at 58% 88%,rgba(13,110,253,.08),transparent 24%),
+      linear-gradient(145deg,#061522 0%,#0B2540 64%,#0B3153 100%);
+      color:#fff}
+    .hero:after{content:"";position:absolute;inset:0;opacity:.11;pointer-events:none;background-image:
+      linear-gradient(rgba(255,255,255,.14) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.14) 1px,transparent 1px);
+      background-size:68px 68px;mask-image:linear-gradient(to bottom,transparent 10%,black 68%,transparent)}
+    .heroGrid{position:relative;z-index:2;min-height:690px;display:grid;grid-template-columns:1.10fr .90fr;
+      gap:82px;align-items:center;padding:88px 0 94px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:800;text-transform:uppercase;
+      letter-spacing:.13em;color:#A9CCFF}
+    .eyebrow:before{content:"";width:25px;height:2px;background:#5EA1FF}
+    h1{font-size:clamp(50px,6vw,78px);line-height:1.02;letter-spacing:-.018em;margin:18px 0 24px;max-width:840px}
+    .heroLead{font-size:20px;line-height:1.55;color:#D5E3F2;max-width:760px;margin:0 0 34px}
+    .heroActions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero .btn.alt{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.24);color:#fff}
+
+    .proof{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);
+      padding:34px 36px 30px;box-shadow:0 30px 70px rgba(0,0,0,.15);backdrop-filter:blur(12px);min-width:0}
+    .proofTitle{font-weight:800;font-size:15px;margin-bottom:10px}
+    .metric{padding:19px 0 20px;border-top:1px solid rgba(255,255,255,.12);display:block}
+    .metric:first-of-type{border-top:0}
+    .metric b{display:block;font-size:30px;line-height:1.05;letter-spacing:-.012em;color:#fff;white-space:nowrap;margin-bottom:8px}
+    .metric span{display:block;font-size:13.5px;line-height:1.45;color:#BCD0E3;max-width:34ch}
+
+    section{padding:96px 0}
+    .sectionHead{max-width:800px;margin-bottom:48px}
+    .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:850;color:var(--blue);margin-bottom:12px}
+    h2{font-size:clamp(36px,4vw,52px);line-height:1.06;letter-spacing:-.015em;margin:0 0 18px}
+    .sectionHead p,.lead{font-size:18px;line-height:1.62;color:var(--muted);margin:0}
+
+    .services{background:var(--ice)}
+    .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 24px;min-height:292px;
+      box-shadow:0 8px 28px rgba(16,45,73,.04);transition:.22s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .num{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.12em;margin-bottom:46px}
+    .card h3{font-size:21px;line-height:1.12;letter-spacing:-.008em;margin:0 0 13px}
+    .card p{font-size:14.5px;line-height:1.55;color:var(--muted);margin:0}
+
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}
+    .darkpanel{background:var(--navy);color:#fff;border-radius:26px;padding:42px;position:sticky;top:112px;
+      background-image:radial-gradient(circle at 100% 0,rgba(66,153,255,.23),transparent 35%)}
+    .darkpanel h3{font-size:30px;line-height:1.12;letter-spacing:-.012em;margin:0 0 16px}
+    .darkpanel p{color:#C2D2E2;line-height:1.62;margin:0 0 22px}
+    .checks{display:grid;gap:15px}
+    .check{display:grid;grid-template-columns:25px 1fr;gap:11px;font-size:15px;line-height:1.45}
+    .check i{width:23px;height:23px;border-radius:50%;background:rgba(13,110,253,.18);color:#9DC5FF;
+      font-style:normal;display:grid;place-items:center;font-size:12px;font-weight:900}
+    .story{display:grid;gap:36px}
+    .storyItem{padding-bottom:34px;border-bottom:1px solid var(--line)}
+    .storyItem:last-child{border:0}
+    .storyItem h3{font-size:24px;letter-spacing:-.008em;margin:0 0 9px}
+    .storyItem p{color:var(--muted);line-height:1.62;margin:0}
+
+    .ma{background:linear-gradient(180deg,#fff,#F7FAFC)}
+    .maGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .deal{border:1px solid var(--line);border-radius:16px;padding:20px 17px;background:#fff;min-height:130px}
+    .deal small{display:block;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:750;margin-bottom:12px}
+    .deal b{font-size:15px;line-height:1.35}
+
+    .position{background:#071827;color:#fff}
+    .position .kicker{color:#82B8FF}
+    .position .sectionHead p{color:#BCCDDD}
+    .positions{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .positionCard{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.055);border-radius:18px;padding:26px}
+    .positionCard h3{font-size:19px;margin:0 0 10px}
+    .positionCard p{font-size:14px;color:#B9CBDC;line-height:1.55;margin:0}
+    .aiBand{margin-top:16px;border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:25px 28px;
+      display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center;background:rgba(13,110,253,.10)}
+    .aiBand strong{font-size:20px}
+    .aiBand p{margin:0;color:#BFD0E0;line-height:1.55;font-size:14.5px}
+
+    .aboutGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:75px;align-items:start}
+    .bio h2{margin-bottom:24px}
+    .bio p{font-size:17px;line-height:1.67;color:var(--muted)}
+    .career{border-left:3px solid var(--blue);padding-left:25px;display:grid;gap:23px}
+    .career div b{display:block;font-size:15px;margin-bottom:4px}
+    .career div span{font-size:13.5px;color:var(--muted);line-height:1.45}
+
+    .coverage{margin-top:34px;padding:22px 24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .coverage strong{display:block;margin-bottom:8px}
+    .coverage span{color:var(--muted);line-height:1.5;font-size:14.5px}
+
+    .cta{padding:90px 0;background:#EEF5FF}
+    .ctaBox{background:#fff;border:1px solid #D6E4F4;border-radius:28px;padding:55px;display:grid;
+      grid-template-columns:1.25fr .75fr;gap:60px;align-items:center;box-shadow:0 24px 70px rgba(13,110,253,.08)}
+    .ctaBox h2{font-size:42px;margin-bottom:14px}
+    .ctaBox p{font-size:17px;line-height:1.6;color:var(--muted);margin:0}
+    .contact{display:grid;gap:10px}
+    .contact .btn{width:100%}
+    .contact small{text-align:center;color:var(--muted);line-height:1.4}
+
+    footer{padding:40px 0;background:#061522;color:#93A8BD;font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:25px;align-items:center}
+    .foot img{width:230px}
+    .footRight{text-align:right}
+
+    @media(max-width:920px){
+      .navlinks a:not(.contactLink){display:none}
+      .heroGrid,.split,.aboutGrid,.ctaBox{grid-template-columns:1fr}
+      .heroGrid{padding:72px 0}
+      .proof{max-width:600px}
+      .grid4{grid-template-columns:1fr 1fr}
+      .maGrid{grid-template-columns:1fr 1fr}
+      .positions{grid-template-columns:1fr}
+      .darkpanel{position:relative;top:0}
+      .aiBand{grid-template-columns:1fr}
+      .split,.aboutGrid{gap:48px}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(var(--max),calc(100% - 28px))}
+      .navin{height:78px}
+      .brand img{width:235px}
+      h1{font-size:47px}
+      .heroLead{font-size:17px}
+      .grid4,.maGrid{grid-template-columns:1fr}
+      section{padding:72px 0}
+      .ctaBox{padding:34px 25px}
+      .foot{align-items:flex-start;flex-direction:column}
+      .footRight{text-align:left}
+      .navlinks{gap:12px}
+      .navlinks .contactLink{font-size:13px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Our Success Coach",
+    "url":"https://oursuccesscoach.com",
+    "description":"Executive consulting for Salesforce revenue transformation, quote-to-cash modernization, program recovery, M&A integration and enterprise transformation.",
+    "founder":{"@type":"Person","name":"Tim Purdie","jobTitle":"Salesforce & Revenue Transformation Program Executive"},
+    "areaServed":["United States","Canada","Europe","Latin America","Asia Pacific"]
+  }
+  </script>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#top" aria-label="Our Success Coach home">
+      <img src="assets/our-success-coach-wordmark.svg" alt="Our Success Coach">
+    </a>
+    <div class="navlinks">
+      <a href="#services">Expertise</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="contactLink">Contact →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap heroGrid">
+    <div>
+      <div class="eyebrow">Executive transformation leadership</div>
+      <h1>Make complex transformation deliver.</h1>
+      <p class="heroLead">Our Success Coach helps enterprises turn Salesforce, revenue operations and post-merger complexity into governed transformation that produces measurable business outcomes.</p>
+      <div class="heroActions">
+        <a class="btn" href="#contact">Discuss an engagement →</a>
+        <a class="btn alt" href="#services">Explore expertise</a>
+      </div>
+    </div>
+    <aside class="proof" aria-label="Selected executive impact">
+      <div class="proofTitle">Selected executive impact</div>
+      <div class="metric"><b>&gt;400%</b><span>Revenue growth enabled through technology and operating-model transformation.</span></div>
+      <div class="metric"><b>35%</b><span>CapEx reduction while scaling complex global operations.</span></div>
+      <div class="metric"><b>32% → 60%+</b><span>Professional-services gross margin improvement.</span></div>
+      <div class="metric"><b>$30M</b><span>Enterprise technology budget and transformation portfolio leadership.</span></div>
+    </aside>
+  </div>
+</header>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sectionHead">
+      <div class="kicker">Where we create leverage</div>
+      <h2>Transformation leadership at the intersection of revenue, technology and execution.</h2>
+      <p>Not staff augmentation. Not another layer of project management. Senior leadership for programs where platform decisions, commercial process and executive accountability have to move together.</p>
+    </div>
+    <div class="grid4">
+      <article class="card"><div class="num">01</div><h3>Revenue & Quote-to-Cash Transformation</h3><p>Salesforce CPQ and Revenue Cloud transition, pricing governance, sales operations, commercial process and end-to-end quote-to-cash alignment.</p></article>
+      <article class="card"><div class="num">02</div><h3>Program Executive & Transformation Recovery</h3><p>Executive ownership for high-visibility programs that need stronger governance, stakeholder alignment, decision velocity, operating discipline and measurable value realization.</p></article>
+      <article class="card"><div class="num">03</div><h3>M&A Integration & Platform Rationalization</h3><p>Pre- and post-merger integration across technology, revenue systems, operating models, governance and organizational change—especially where acquired businesses must become one enterprise.</p></article>
+      <article class="card"><div class="num">04</div><h3>Executive Technology & Operating-Model Advisory</h3><p>CIO, CISO and COO perspective applied to cloud modernization, enterprise platforms, cybersecurity, privacy, portfolio governance and scalable delivery models.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap split">
+    <aside class="darkpanel">
+      <div class="kicker" style="color:#82B8FF">The difference</div>
+      <h3>The platform is only part of the transformation.</h3>
+      <p>Revenue programs fail when technology is treated separately from pricing, finance, sales behavior, governance and operating accountability.</p>
+      <div class="checks">
+        <div class="check"><i>✓</i><span>Translate executive intent into decisions the program can execute.</span></div>
+        <div class="check"><i>✓</i><span>Connect Sales, Finance, Operations, Technology, Security and delivery partners.</span></div>
+        <div class="check"><i>✓</i><span>Establish governance that accelerates decisions instead of slowing them down.</span></div>
+        <div class="check"><i>✓</i><span>Manage transformation toward business outcomes, not simply go-live.</span></div>
+      </div>
+    </aside>
+    <div class="story">
+      <div class="storyItem"><h3>Business first. Architecture informed.</h3><p>We work above the configuration layer—close enough to architecture and delivery to challenge assumptions, but focused on the business model, commercial process and enterprise outcome the technology is meant to enable.</p></div>
+      <div class="storyItem"><h3>Operating experience, not theory.</h3><p>Our perspective comes from having led as CIO, CISO, COO, transformation executive and consulting operator. That creates a different conversation about risk, margin, scalability, governance and what will actually work after implementation.</p></div>
+      <div class="storyItem"><h3>Independent executive accountability.</h3><p>We can sit across internal executives, Salesforce and systems integrators without being economically tied to a particular platform build. The objective is a successful enterprise outcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ma" id="experience">
+  <div class="wrap">
+    <div class="sectionHead">
+      <div class="kicker">M&A integration experience</div>
+      <h2>Transformation experience through repeated acquisition cycles.</h2>
+      <p>Technology consolidation after M&A is rarely just technical. It is an operating-model, governance, data and revenue-process problem—experience built across several major acquisition environments.</p>
+    </div>
+    <div class="maGrid">
+      <div class="deal"><small>Salesforce consulting</small><b>Modacto → Xede Consulting Group</b></div>
+      <div class="deal"><small>Enterprise software</small><b>Odesta / Livelink → OpenText</b></div>
+      <div class="deal"><small>Information services</small><b>ProQuest → Clarivate</b></div>
+      <div class="deal"><small>Consumer / digital</small><b>Entertainment Publications → USA Interactive / IAC</b></div>
+      <div class="deal"><small>Technology</small><b>QNX Software Systems → BlackBerry</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="position">
+  <div class="wrap">
+    <div class="sectionHead">
+      <div class="kicker">Engagement sweet spot</div>
+      <h2>Bring us in when the transformation is too important to manage as an ordinary implementation.</h2>
+      <p>Best suited to enterprise engagements where commercial process, technology, multiple executives and material business outcomes converge.</p>
+    </div>
+    <div class="positions">
+      <article class="positionCard"><h3>Revenue transformation</h3><p>CPQ / Revenue Cloud evolution, quote-to-cash redesign, pricing governance and enterprise revenue-system modernization.</p></article>
+      <article class="positionCard"><h3>Complex program leadership</h3><p>Multi-million-dollar programs with multiple workstreams, implementation partners and executive stakeholders.</p></article>
+      <article class="positionCard"><h3>Post-merger integration</h3><p>CRM, ERP and operating-model consolidation where acquired businesses need a common commercial and technology backbone.</p></article>
+    </div>
+    <div class="aiBand">
+      <strong>AI where it creates enterprise value.</strong>
+      <p>AI and agentic capabilities increasingly sit inside Salesforce and the broader enterprise stack. Our role is pragmatic: incorporate emerging capabilities where they improve the revenue process, governance or operating model—without turning an enterprise transformation into an AI experiment.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap aboutGrid">
+    <div class="bio">
+      <div class="kicker">Principal</div>
+      <h2>Tim Purdie</h2>
+      <p>Tim is an enterprise transformation executive whose career spans CIO, CISO, COO, privacy leadership and global consulting delivery. He has led revenue and technology modernization, enterprise portfolio governance, cybersecurity and privacy programs, cloud transformation, professional-services operating models and acquisition integration.</p>
+      <p>His work has supported organizations across North America, Europe, Latin America and Asia Pacific, including environments scaling to more than 2,000 employees and portfolios with $30M in technology spend.</p>
+      <p>Our Success Coach is based in Portugal and serves US and international clients through independent B2B consulting engagements, with substantial overlap to US business hours.</p>
+      <div class="coverage"><strong>Primary engagement coverage</strong><span>United States, Canada, Europe.</span></div>
+    </div>
+    <div class="career">
+      <div><b>Salesforce & Revenue Transformation</b><span>Global gaming enterprise — CPQ, quote-to-cash, pricing governance and revenue systems.</span></div>
+      <div><b>Chief Information & Security Officer</b><span>22 operating companies across 9 countries; rapid ERP and cloud modernization.</span></div>
+      <div><b>COO & VP Customer Transformation</b><span>Professional-services transformation, 225% revenue growth and margin expansion.</span></div>
+      <div><b>Chief Information Officer</b><span>$30M enterprise IT budget and global transformation portfolio.</span></div>
+      <div><b>Enterprise PMO Leadership</b><span>Governance across 200+ global programs and international infrastructure expansion.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="ctaBox">
+      <div>
+        <div class="kicker">Start a conversation</div>
+        <h2>Have a transformation that needs executive traction?</h2>
+        <p>For revenue transformation, Salesforce program leadership, M&A integration or an enterprise initiative that needs stronger alignment and accountability, start with a confidential conversation.</p>
+      </div>
+      <div class="contact">
+        <a class="btn" href="mailto:tim@oursuccesscoach.com?subject=Our%20Success%20Coach%20-%20Consulting%20Inquiry">Contact Tim Purdie →</a>
+        <a class="btn alt" href="tel:+351960289031">+351 960 289 031</a>
+        <small>Portugal based · US and international engagements</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="assets/our-success-coach-wordmark-white.svg" alt="Our Success Coach">
+    <div class="footRight">Revenue transformation · Executive program leadership · M&A integration<br>© <span id="year"></span> Our Success Coach. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

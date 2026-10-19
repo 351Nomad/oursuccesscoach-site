@@ -1,0 +1,5 @@
+deploy.sh
+*.command
+README.md
+.DS_Store
+_to_delete/
