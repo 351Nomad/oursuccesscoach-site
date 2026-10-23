@@ -23,7 +23,7 @@
       --sky:#EAF3FF;
       --ice:#F5F8FB;
       --white:#FFFFFF;
-      --muted:#66788A;
+      --muted:#5F7185;
       --line:#DCE5EE;
       --shadow:0 24px 70px rgba(7,24,39,.12);
       --radius:22px;
@@ -87,6 +87,7 @@
     .sectionHead p,.lead{font-size:18px;line-height:1.62;color:var(--muted);margin:0}
 
     .services{background:var(--ice)}
+    .services .kicker,.ma .kicker{color:#0B63E5}
     .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 24px;min-height:292px;
       box-shadow:0 8px 28px rgba(16,45,73,.04);transition:.22s}
@@ -179,6 +180,9 @@
       .navlinks{gap:12px}
       .navlinks .contactLink{font-size:13px}
     }
+    a:focus-visible,button:focus-visible{outline:3px solid #0D6EFD;outline-offset:3px;border-radius:6px}
+    .hero a:focus-visible,.hero button:focus-visible{outline-color:#4C8DFF}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}.btn:hover{transform:none}}
   </style>
   <script type="application/ld+json">
   {
