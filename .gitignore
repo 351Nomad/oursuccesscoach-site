@@ -3,3 +3,6 @@ deploy.sh
 README.md
 .DS_Store
 _to_delete/
+
+# scratch images from Claude sessions — never publish to the public site
+Claude outputs/
