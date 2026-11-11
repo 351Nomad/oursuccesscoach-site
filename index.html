@@ -7,6 +7,7 @@
 <meta name="description" content="Fractional and interim executive leadership for transformation programs where platform decisions, revenue process and executive accountability have to move together.">
 <link rel="canonical" href="https://oursuccesscoach.com/">
 <link rel="icon" href="assets/our-success-coach-s-mark.svg" type="image/svg+xml">
+<meta name="theme-color" content="#071827">
 <meta property="og:title" content="Our Success Coach | Fractional executive leadership">
 <meta property="og:description" content="The executive your transformation is missing. Fractional and interim leadership for transformation programs.">
 <meta property="og:type" content="website">
@@ -16,93 +17,154 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#071827;--ink:#0A1B2E;--blue:#0D6EFD;--blue-d:#4C8DFF;--soft:#C5D2E0;--dim:#9FB0C3;--rule:rgba(255,255,255,.18)}
+:root{--navy:#071827;--navy2:#0D2A47;--ink:#0A1B2E;--blue:#0D6EFD;--blue-t:#0B63E5;--blue-d:#4C8DFF;--muted:#5F7185;--line:#D9E1EA;--pale:#F3F6F9}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--navy);color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-a:focus-visible{outline:3px solid var(--blue-d);outline-offset:3px;border-radius:3px}
-.split{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);min-height:100vh}
-.text{padding:clamp(28px,4.5vh,56px) clamp(28px,4.4vw,72px);display:flex;flex-direction:column;position:relative}
-.logo{height:26px;width:auto;display:block;margin-bottom:18px}
-.main{margin:auto 0;padding:clamp(20px,3vh,36px) 0}
-.kicker{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-d);display:flex;align-items:center;gap:10px}
-.kicker::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--blue)}
-h1{font-size:clamp(34px,3.9vw,60px);line-height:1.03;font-weight:850;letter-spacing:-.025em;margin:16px 0 18px}
-h1 em{font-style:normal;color:var(--blue-d)}
-.lede{font-size:clamp(15.5px,1.2vw,18px);color:var(--soft);max-width:30em}
-nav{display:flex;gap:6px;margin:clamp(20px,3vh,32px) 0 0;padding:8px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:14px;font-weight:650}
-nav a{padding:8px 16px 8px 0;margin-right:10px;text-decoration:none;min-height:40px;display:inline-flex;align-items:center}
-nav a:hover{color:var(--blue-d)}
-.roles{list-style:none;margin-top:clamp(18px,3vh,30px);border-top:1px solid var(--rule)}
-.roles li{display:grid;grid-template-columns:34px 1fr;padding:11px 0;border-bottom:1px solid var(--rule)}
-.roles .n{font-size:12px;font-weight:700;color:var(--blue-d);letter-spacing:.1em;padding-top:3px}
-.roles b{font-weight:700;font-size:16.5px;letter-spacing:-.005em}
-.roles span.d{grid-column:2;color:var(--dim);font-size:14.5px;line-height:1.45}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(18px,3vh,28px)}
-.stats b{display:block;font-size:clamp(24px,2.5vw,36px);font-weight:850;letter-spacing:-.03em;line-height:1;white-space:nowrap}
-.stats b i{font-style:normal;color:var(--blue-d)}
-.stats span{display:block;margin-top:6px;font-size:12.5px;color:var(--dim);line-height:1.35}
-.note{margin-top:10px;font-size:12.5px;color:var(--dim)}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:clamp(20px,3.2vh,32px)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;background:var(--blue);color:#fff;font-weight:650;font-size:15px;text-decoration:none;transition:transform .15s,background .15s}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.dark a:focus-visible{outline-color:var(--blue-d)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+
+/* hero */
+.dark{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;right:-12%;top:-30%;width:70vw;height:70vw;max-width:900px;max-height:900px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(13,110,253,.28),rgba(13,110,253,0) 62%);pointer-events:none}
+nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0;position:relative}
+nav img{height:26px;width:auto;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;background:var(--blue);color:#fff;font-weight:650;font-size:15px;text-decoration:none;border:0;transition:transform .15s,background .15s}
 .btn:hover{background:#2B7FFF;transform:translateY(-1px)}
-.cta .c{font-size:15px;color:var(--soft);line-height:1.5}
-.cta .c a{text-decoration:none;font-weight:650;color:#fff}
-.cta .c a:hover{color:var(--blue-d)}
-.legal{font-size:11.5px;line-height:1.5;color:#8496AB;border-top:1px solid var(--rule);padding-top:14px}
-.photo{position:relative;background:#B9BDC2;min-height:56vh}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 8%;display:block}
-.photo figcaption{position:absolute;left:clamp(20px,3vw,40px);bottom:clamp(20px,3vw,36px);background:rgba(7,24,39,.86);padding:14px 18px;border-radius:4px;max-width:340px;font-size:13.5px;color:var(--soft);line-height:1.4}
-.photo figcaption b{display:block;color:#fff;font-size:16px;font-weight:700}
-@media (min-width:901px){.photo{position:sticky;top:0;height:100vh;align-self:start}}
-@media (max-width:900px){
- .split{grid-template-columns:1fr}
- .photo{order:-1;min-height:0;height:62vh;max-height:520px}
- .photo img{object-position:50% 10%}
- .text{padding-top:28px}
- .photo{margin-top:0}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35)}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.5fr);gap:clamp(32px,6vw,96px);align-items:center;padding:clamp(28px,5vh,56px) 0 clamp(48px,8vh,80px);position:relative}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-d);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--blue)}
+h1{font-size:clamp(40px,6.4vw,92px);line-height:1.0;font-weight:850;letter-spacing:-.025em;margin:22px 0 26px}
+h1 em{font-style:normal;color:var(--blue-d)}
+.lede{font-size:clamp(17px,1.5vw,21px);color:#C5D2E0;max-width:36em;font-weight:400}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.who{justify-self:end;width:100%;max-width:250px}
+.who img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:6px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.who p{margin-top:14px;font-size:14px;color:#C5D2E0;line-height:1.45}
+.who b{display:block;color:#fff;font-weight:700;font-size:16px}
+
+/* offer */
+.offer{padding:clamp(56px,9vh,96px) 0 clamp(40px,6vh,64px)}
+.offer h2{font-size:clamp(28px,3.4vw,46px);line-height:1.08;font-weight:800;letter-spacing:-.018em;max-width:20em}
+.offer .sub{color:var(--muted);margin-top:14px;max-width:40em;font-size:18px}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:2px solid var(--ink)}
+.role{padding:26px 28px 8px 0}
+.role+.role{padding-left:28px;border-left:1px solid var(--line)}
+.role .n{font-size:13px;font-weight:700;color:var(--blue-t);letter-spacing:.1em}
+.role h3{font-size:21px;line-height:1.2;font-weight:750;letter-spacing:-.01em;margin:10px 0 10px}
+.role p{color:var(--muted);font-size:15.5px}
+
+/* proof */
+.proof{background:var(--pale);padding:clamp(40px,6vh,64px) 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.stat b{display:block;font-size:clamp(40px,4.6vw,64px);font-weight:850;letter-spacing:-.03em;line-height:1;color:var(--ink);white-space:nowrap}
+.stat b i{font-style:normal;color:var(--blue-t)}
+.stat span{display:block;margin-top:10px;font-size:15px;color:var(--muted);max-width:15em}
+.note{margin-top:30px;font-size:14px;color:var(--muted)}
+
+/* close */
+.close{padding:clamp(48px,8vh,84px) 0}
+.close .grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:center}
+.close h2{font-size:clamp(28px,3.4vw,46px);line-height:1.08;font-weight:800;letter-spacing:-.018em}
+.box{border:1px solid var(--line);border-radius:10px;padding:28px}
+.box a.mail{display:block;font-size:clamp(20px,2vw,26px);font-weight:750;letter-spacing:-.01em;text-decoration:none;color:var(--ink);overflow-wrap:anywhere}
+.box a.mail:hover{color:var(--blue-t)}
+.box .tel{display:block;margin:6px 0 22px;color:var(--muted);text-decoration:none;font-size:17px}
+
+footer{background:var(--navy);color:#9FB0C3;padding:28px 0;font-size:13px;line-height:1.6}
+
+@media (max-width:980px){
+ .roles{grid-template-columns:repeat(2,1fr)}
+ .role:nth-child(3){padding-left:0;border-left:0}
+ .role:nth-child(n+3){border-top:1px solid var(--line);margin-top:18px;padding-top:26px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+ .hero{grid-template-columns:1fr;gap:36px}
+ .who{justify-self:start;max-width:240px}
+ .close .grid{grid-template-columns:1fr}
+ nav .btn{min-height:46px;padding:0 20px}
 }
 @media (max-width:560px){
- .stats{grid-template-columns:repeat(2,1fr);gap:20px 14px}
- .btn{width:100%}
- nav{flex-wrap:wrap}
+ .roles{grid-template-columns:1fr}
+ .role,.role+.role{padding:22px 0 6px;border-left:0}
+ .role+.role{border-top:1px solid var(--line)}
+ .role:nth-child(3){margin-top:0}
+ .role:nth-child(n+3){margin-top:0}
+ .ctas .btn{width:100%}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
 </style>
 </head>
 <body>
-<div class="split">
- <section class="text">
-  <a href="#top" aria-label="Our Success Coach, home" style="align-self:flex-start"><img class="logo" src="assets/our-success-coach-wordmark-white.svg" alt="Our Success Coach"></a>
-  <div class="main" id="top">
-   <p class="kicker">Fractional executive leadership</p>
-   <h1>The executive your transformation is <em>missing.</em></h1>
-   <p class="lede">Fractional and interim leadership for programs where platform decisions, revenue process and executive accountability have to move together. Not staff augmentation. Not another layer of project management.</p>
-   <ul class="roles" id="roles">
-    <li><span class="n">01</span><b>Fractional CIO or CISO</b></li>
-    <li><span class="n">02</span><b>Transformation executive</b></li>
-    <li><span class="n">03</span><b>Program governance lead</b></li>
-    <li><span class="n">04</span><b>Data protection officer</b></li>
-   </ul>
-   <div class="stats" id="results">
-    <div><b>22</b><span>operating companies across four regions</span></div>
-    <div><b>200<i>+</i></b><span>programs under one governance model</span></div>
-    <div><b>225<i>%</i></b><span>revenue growth with margin expansion</span></div>
-    <div><b>$30<i>M</i></b><span>technology budget and portfolio</span></div>
+<header class="dark">
+ <div class="wrap">
+  <nav aria-label="Primary">
+   <a href="#top" aria-label="Our Success Coach, home"><img src="assets/our-success-coach-wordmark-white.svg" alt="Our Success Coach"></a>
+   <a class="btn" href="#contact">Book a conversation</a>
+  </nav>
+  <section class="hero" id="top">
+   <div>
+    <p class="kicker">Fractional executive leadership</p>
+    <h1>The executive your transformation is <em>missing.</em></h1>
+    <p class="lede">Fractional and interim leadership for programs where platform decisions, revenue process and executive accountability have to move together. Not staff augmentation. Not another layer of project management.</p>
+    <div class="ctas">
+     <a class="btn" href="#contact">Book a conversation</a>
+     <a class="btn ghost" href="#roles">See the roles</a>
+    </div>
    </div>
-   <p class="note">Results from executive roles held. Client and employer names stay confidential.</p>
-   <div class="cta" id="contact">
-    <a class="btn" href="mailto:tim@oursuccesscoach.com?subject=Conversation">Book a conversation</a>
-    <p class="c"><a href="mailto:tim@oursuccesscoach.com">tim@oursuccesscoach.com</a><br><a href="tel:+351960289031" style="font-weight:500;color:var(--soft)">+351 960 289 031</a></p>
+   <figure class="who">
+    <img src="assets/tim-portrait.jpg" alt="Tim Purdie, Principal, Our Success Coach" width="864" height="1080">
+    <p><b>Tim Purdie</b>Principal. Enterprise transformation executive across ERP, Salesforce, cloud, cybersecurity governance and operating model design.</p>
+   </figure>
+  </section>
+ </div>
+</header>
+
+<main>
+ <section class="offer" id="roles">
+  <div class="wrap">
+   <h2>Senior leadership, embedded for as long as the program needs it.</h2>
+   <p class="sub">Four seats a program tends to be missing, filled by an executive who has held each one.</p>
+   <div class="roles">
+    <article class="role"><span class="n">01</span><h3>Fractional CIO or CISO</h3><p>Technology strategy, budget, security governance and vendor accountability at the executive table.</p></article>
+    <article class="role"><span class="n">02</span><h3>Transformation executive</h3><p>Revenue, platform and operating model decisions owned in one place, from quote to cash to adoption.</p></article>
+    <article class="role"><span class="n">03</span><h3>Program governance lead</h3><p>One governance model across every workstream, so decisions move and benefits are measured.</p></article>
+    <article class="role"><span class="n">04</span><h3>Data protection officer</h3><p>Privacy and governance frameworks that satisfy regulators and survive an acquisition.</p></article>
    </div>
   </div>
-  <p class="legal">OUR SUCCESS COACH, UNIPESSOAL LDA. · Registered at the Conservatória do Registo Comercial de Lisboa · NIPC / Matrícula 519643143 · Share capital €1,000 · Registered office: Rua Principal do Casal Viegas, n.º 228, 3240-214 Ansião, Portugal</p>
  </section>
- <figure class="photo">
-  <img src="assets/tim-portrait.jpg" alt="Tim Purdie, Principal, Our Success Coach" width="1080" height="1250">
-  <figcaption><b>Tim Purdie</b>Principal. Enterprise transformation across ERP, Salesforce, cloud, cybersecurity governance and operating model design.</figcaption>
- </figure>
-</div>
+
+ <section class="proof" aria-label="Results">
+  <div class="wrap">
+   <div class="stats">
+    <div class="stat"><b>22</b><span>operating companies led across Canada, the EU, Latin America and Africa</span></div>
+    <div class="stat"><b>200<i>+</i></b><span>global programs run under one governance model</span></div>
+    <div class="stat"><b>225<i>%</i></b><span>revenue growth with margin expansion</span></div>
+    <div class="stat"><b>$30<i>M</i></b><span>technology budget and global transformation portfolio</span></div>
+   </div>
+   <p class="note">Results from executive roles held. Client and employer names stay confidential.</p>
+  </div>
+ </section>
+
+ <section class="close" id="contact">
+  <div class="wrap grid">
+   <h2>Start with a conversation about what the program needs at the top.</h2>
+   <div class="box">
+    <a class="mail" href="mailto:tim@oursuccesscoach.com">tim@oursuccesscoach.com</a>
+    <a class="tel" href="tel:+351960289031">+351 960 289 031</a>
+    <a class="btn" href="mailto:tim@oursuccesscoach.com?subject=Conversation">Book a conversation</a>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">OUR SUCCESS COACH, UNIPESSOAL LDA. · Registered at the Conservatória do Registo Comercial de Lisboa · NIPC / Matrícula 519643143 · Share capital €1,000 · Registered office: Rua Principal do Casal Viegas, n.º 228, 3240-214 Ansião, Portugal</div>
+</footer>
 </body>
 </html>
