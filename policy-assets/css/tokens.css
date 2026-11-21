@@ -1,0 +1,42 @@
+@font-face{font-family:'Inter Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('/policy-assets/fonts/inter-latin-wght-normal.woff2') format('woff2-variations')}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-display:swap;src:url('/policy-assets/fonts/bricolage-grotesque-latin-wght-normal.woff2') format('woff2-variations')}
+:root{
+  --background:#ffffff;
+  --background-secondary:#F3F6FA;
+  --background-tertiary:#f4f4f4;
+  --background-dark:#0A1B2E;
+  --text:#0A1B2E;
+  --text-light:#F3F6FA;
+  --text-secondary:#5F7185;
+  --text-secondary-light:#A9B8C9;
+  --text-tertiary:#3A4A5C;
+  --primary:#0D6EFD;
+  --primary-hover:#0B5ED7;
+  --secondary:#0A1B2E;
+  --alert:#e85454;
+  --alert-hover:#ff5c5c;
+  --warning:#B45309;
+  --selection:#BBD6FE;
+  --input-background:#EAF0F6;
+  --input-placeholder:#5F7185;
+  --input-divider:#D5DEE8;
+  --divider:#0000000a;
+  --table-border:#d9d9d9;
+  --dashboard-card:#F8FAFC;
+  --stroke:#E6ECF3;
+  --card-button:#E3E9F0;
+  --card-button-hover:#C3CDD9;
+  --empty-card:#F3F6FA;
+  --card-1:#CFE2FF;--card-2:#D6F0F5;--card-3:#E2E8F0;--card-4:#DDE7FF;--card-5:#C7D7EA;--card-6:#E8EEF8;--card-7:#BBD6FE;
+  --shadow:#00000029;
+  --dim:#00000014;
+  --font-body:'Inter Variable',Inter,Arial,sans-serif;
+  --font-display:'Bricolage Grotesque','Inter Variable',Arial,sans-serif;
+  --radius-small:.25em;
+  --radius-rounded:.625em;
+}
+*,*::before,*::after{-webkit-tap-highlight-color:transparent}
+html{line-height:1.15;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden}
+svg.icon{height:1em}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

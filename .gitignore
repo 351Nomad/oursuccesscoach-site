@@ -6,3 +6,6 @@ _to_delete/
 
 # scratch images from Claude sessions — never publish to the public site
 Claude outputs/
+
+# Expression server: source, built copy and live data stay private
+tools/expression-app/
