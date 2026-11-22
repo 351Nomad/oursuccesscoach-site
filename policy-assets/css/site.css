@@ -73,8 +73,8 @@ svg.ico{height:1em;vertical-align:middle}
 .hero span{white-space:nowrap}
 @media (min-width:768px){.hero{padding-top:1em}}
 .page-title{font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1;letter-spacing:-.018em;margin:0 0 .5em}
-@media (min-width:1024px){.page-title{font-size:2.25rem;letter-spacing:-.027777778em}}
-@media (min-width:1366px){.page-title{font-size:2.625rem;letter-spacing:-.047619048em}}
+@media (min-width:1024px){.page-title{font-size:2.25rem;letter-spacing:-.018em}}
+@media (min-width:1366px){.page-title{font-size:2.625rem;letter-spacing:-.018em}}
 .lead{font-size:1.125rem;line-height:1.35;margin:0}
 @media (min-width:768px){.lead{font-size:1rem}}
 @media (min-width:1024px){.lead{font-size:1.125rem}}
@@ -97,7 +97,7 @@ svg.ico{height:1em;vertical-align:middle}
 @media (min-width:1366px){.main{padding-top:5.125em;padding-bottom:5.125em}}
 @media (min-width:1920px){.main{padding-top:6.75em;padding-bottom:6.75em}}
 .h3{font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1;letter-spacing:-.018em}
-@media (min-width:1920px){.h3{font-size:2.25rem;letter-spacing:-.027777778em}}
+@media (min-width:1920px){.h3{font-size:2.25rem;letter-spacing:-.018em}}
 .text{font-size:1rem;line-height:1.35}
 @media (min-width:768px){.text{font-size:.875rem}}
 @media (min-width:1024px){.text{font-size:1rem}}
@@ -106,7 +106,7 @@ svg.ico{height:1em;vertical-align:middle}
 /* legal documents */
 .legal h2{font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1;letter-spacing:-.018em;margin:1.25em 0 .5em}
 .legal h2:first-child{margin-top:0}
-@media (min-width:1920px){.legal h2{font-size:2.25rem;letter-spacing:-.027777778em}}
+@media (min-width:1920px){.legal h2{font-size:2.25rem;letter-spacing:-.018em}}
 .legal p,.legal li{font-size:1rem;line-height:1.35}
 .legal ol,.legal ul{font-size:1.125rem;line-height:1.35}
 @media (min-width:768px){.legal p,.legal li{font-size:.875rem}.legal ol,.legal ul{font-size:1rem}}
