@@ -9,3 +9,9 @@ Claude outputs/
 
 # Expression server: source, built copy and live data stay private
 tools/expression-app/
+
+# Impeccable design skill: local only, never publish
+.claude/
+.impeccable/
+PRODUCT.md
+DESIGN.md
